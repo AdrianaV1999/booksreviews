@@ -107,6 +107,7 @@ class ReviewController extends Controller
         $review->save();
 
         return response()->json(['Review is updated successfully.', new ReviewResource($review)]);
+        
     }
 
     /**

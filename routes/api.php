@@ -33,6 +33,7 @@ Route::get('/books', [BookController::class, 'index']);
 
 Route::get('/books/{id}', [BookController::class, 'show']);
 
+Route::put('/book', [BookController::class, 'update']);
 
 
 Route::resource('reviews', ReviewController::class)->only(['index']);
@@ -53,7 +54,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         return auth()->user();
     });
 
+    Route::resource('reviews', ReviewController::class)->only(['store','update']);
 
-Route::post('/logout', [AuthController::class, 'logout']);
+    Route::post('/logout', [AuthController::class, 'logout']);
 
 });
