@@ -1,3 +1,6 @@
+# Books Reviews App
+The application allows users to rate books they have read. Registered users can add and modify ratings for books. Unregistered users can view all available books and their ratings. They can also delete ratings they disagree with. It is built using Laravel.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
